@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:first_project/sliver_app_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,24 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: const HomePage(),
       debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: CupertinoColors.label,
-        title: Text(
-          "F i r s t   A p p   B a r ",
-          style: TextStyle(color: CupertinoColors.white),
-        ),
-      ),
     );
   }
 }
